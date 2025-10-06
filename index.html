@@ -2,7 +2,15 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chloe Liao's Links</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+
     <style>
       html {
         min-height: 100%;
@@ -13,6 +21,7 @@
         padding-bottom: 40px;
         background: radial-gradient(circle at 50% 50%, #f5f9ec, #dddccf, #c6bfb5, #aea39e, #968888, #7d6f74, #635661, #49404e);
         color: rgba(182, 159, 185, 1);
+        font-family: "PT Serif";
       }
 
       .avatar-image {
@@ -32,14 +41,48 @@
       }
       a {
         color:rgba(182, 159, 185, 1);
+        text-decoration: none;
       }
       .item {
         background-color:rgba(232, 228, 216, 1);
+        border-radius: 1000px;
+        padding: 5px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+      }
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Playfair Display";
+        font-size: 24px;
+        font-weight: 900;
+      }
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .item {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
       }
     </style>
   </head>
   <body>
-    <div class="main container">
+    <div class="main-container">
       <div class="image-row">
         <img class="avatar-image" src="/pictures/IMG_9058 (1).jpg" alt="Chloe Liao Headshot">
       </div>
@@ -50,13 +93,13 @@
 
       <div class="social-icons-row">
         <a href="https://www.linkedin.com/in/chloe-liao-34257b21a/" target="_blank">
-          LinkedIn
+          <i class="fa-brands fa-linkedin"></i> 
         </a>
         <a href="https://www.pinterest.com/chloeliiao/" target="_blank">
-          Pinterest
+          <i class="fa-brands fa-pinterest"></i> 
         </a>
         <a href="https://www.instagram.com/chloe.liaoo/" target="_blank">
-          Instagram
+          <i class="fa-brands fa-square-instagram"></i> 
         </a>
       </div>
 
@@ -64,7 +107,7 @@
         <div class="item">
           <img class="thumbnail" src="/pictures/charlota-blunarova-r5xHI_H44aM-unsplash (1).jpg">
 
-          <a target="_blank" href="https://www.vogue.com/tag/event/paris-fashion-week">
+          <a class="link-text" target="_blank" href="https://www.vogue.com/tag/event/paris-fashion-week">
             Paris Fashion Week News
           </a>
         </div>
@@ -72,7 +115,7 @@
         <div class="item">
           <img class="thumbnail" src="/pictures/luise-and-nic-hETU8_b2IM0-unsplash.jpg">
 
-          <a target="_blank" href="https://www.nytimes.com/2020/09/20/arts/design/climate-clock-metronome-nyc.html">
+          <a class="link-text" target="_blank" href="https://www.nytimes.com/2020/09/20/arts/design/climate-clock-metronome-nyc.html">
             The Climate Clock
           </a>
         </div>
@@ -80,7 +123,7 @@
         <div class="item">
           <img class="thumbnail" src="/pictures/christian-cueni-vO2A5WWShSo-unsplash.jpg">
 
-          <a target="_blank" href="https://www.vincentvacations.com/how-to-travel-agent/emerging-destinations-for-2026-staying-ahead-of-the-travel-trend">
+          <a class="link-text" target="_blank" href="https://www.vincentvacations.com/how-to-travel-agent/emerging-destinations-for-2026-staying-ahead-of-the-travel-trend">
             2026 Travel Trends
           </a>
         </div>
@@ -88,7 +131,7 @@
         <div class="item">
           <img class="thumbnail" src="/pictures/payoon-gerinto-A1FPTdsSFM4-unsplash.jpg">
           
-          <a target="_blank" href="https://www.erinparekh.com/lifestyle/how-to-make-a-matcha-latte-at-home">
+          <a class="link-text" target="_blank" href="https://www.erinparekh.com/lifestyle/how-to-make-a-matcha-latte-at-home">
             Make a Matcha Latte
           </a>
         </div>
@@ -96,7 +139,7 @@
         <div class="item">
           <img class="thumbnail" src="/pictures/download.jpg">
 
-          <a target="_blank" href="https://www.myartbroker.com/artist-yoshitomo-nara/articles/yoshitomo-nara-japanese-pop-art-icon">
+          <a class="link-text" target="_blank" href="https://www.myartbroker.com/artist-yoshitomo-nara/articles/yoshitomo-nara-japanese-pop-art-icon">
             Yoshitomo Nara
           </a>
         </div>
